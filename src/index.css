@@ -1,0 +1,55 @@
+@import "tailwindcss";
+
+@theme {
+  /* Registering your custom professional palette into the Tailwind theme */
+  --color-canvas: var(--bg-canvas);
+  --color-card: var(--bg-card);
+  --color-main: var(--text-main);
+  --color-muted: var(--text-muted);
+  --color-border-accent: var(--border-color);
+}
+
+:root {
+  --bg-canvas: #f8fafc;
+  --bg-card: #ffffff;
+  --text-main: #0f172a;
+  --text-muted: #64748b;
+  --border-color: #e2e8f0;
+}
+
+.dark {
+  --bg-canvas: #09090b;
+  --bg-card: #18181b;
+  --text-main: #f4f4f5;
+  --text-muted: #a1a1aa;
+  --border-color: #27272a;
+}
+
+@layer base {
+  body {
+    background-color: var(--bg-canvas);
+    color: var(--text-main);
+    @apply transition-colors duration-300;
+  }
+}
+
+/* Customizing React Flow */
+/* Note: In v4, if @apply fails on complex selectors, use standard CSS with theme() */
+.react-flow__node {
+  transition: transform 0.2s ease;
+}
+
+.react-flow__node:hover {
+  transform: scale(1.05);
+}
+
+.react-flow__handle {
+  width: 12px !important;
+  height: 12px !important;
+  background-color: #3b82f6 !important; /* blue-500 */
+  border: 2px solid white !important;
+}
+
+.dark .react-flow__handle {
+  border-color: #18181b !important; /* zinc-900 */
+}
