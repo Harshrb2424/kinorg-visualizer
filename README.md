@@ -47,7 +47,7 @@
 ### Installation
 1. **Clone the repo**
    ```bash
-   git clone [https://github.com/Harshrb2424/kinorg-visualizer.git](https://github.com/Harshrb2424/kinorg-visualizer.git)
+   git clone https://github.com/Harshrb2424/kinorg-visualizer.git
 
 ```
 
@@ -104,6 +104,6 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 ---
 
-## 👋 Support
+## Support
 
 If you find this project useful, feel free to star the repo!
